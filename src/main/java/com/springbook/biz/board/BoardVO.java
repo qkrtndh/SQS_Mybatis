@@ -2,11 +2,7 @@ package com.springbook.biz.board;
 
 import java.util.Date;
 
-
-
-//VO(Value Object)
 public class BoardVO {
-
 	private int seq;
 	private String title;
 	private String writer;
@@ -15,7 +11,6 @@ public class BoardVO {
 	private int cnt;
 	private String searchCondition;
 	private String searchKeyword;
-
 
 	public int getSeq() {
 		return seq;
@@ -79,9 +74,7 @@ public class BoardVO {
 
 	public void setSearchKeyword(String searchKeyword) {
 		this.searchKeyword = searchKeyword;
-	}	
-
-	
+	}
 
 	@Override
 	public String toString() {

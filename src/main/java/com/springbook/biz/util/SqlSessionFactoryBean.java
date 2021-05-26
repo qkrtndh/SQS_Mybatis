@@ -15,12 +15,12 @@ public class SqlSessionFactoryBean {
 				Reader reader = Resources.getResourceAsReader("sql-map-config.xml");
 				sessionFactory = new SqlSessionFactoryBuilder().build(reader);
 			}
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 	public static SqlSession getSqlSessionInstance() {
 		return sessionFactory.openSession();
 	}
-
 }

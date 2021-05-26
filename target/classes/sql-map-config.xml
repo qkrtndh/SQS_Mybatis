@@ -1,16 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE configuration
-  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<!-- Properties 파일 설정 -->
 	<properties resource="db.properties" />
-	
 	<!-- Alias 설정 -->
 	<typeAliases>
-		<typeAlias type="com.springbook.biz.board.BoardVO" alias="board"></typeAlias>
+		<typeAlias alias="board" type="com.springbook.biz.board.BoardVO" />
 	</typeAliases>
-	
 	<!-- DataSource 설정 -->
 	<environments default="development">
 		<environment id="development">
@@ -23,9 +20,8 @@
 			</dataSource>
 		</environment>
 	</environments>
-	
-	<!-- sql mapper 설정 -->
+	<!-- Sql Mapper 설정 -->
 	<mappers>
-		<mapper resource="ㅡmappings/board-mapping.xml" />
+		<mapper resource="mappings/board-mapping.xml" />
 	</mappers>
 </configuration>
